@@ -34,13 +34,13 @@
 <table>
 	<tr><td>
 	<tr><td>Admin Login
-	<tr><td><input type="password" value="" name="pass" >
-	<tr><td><input type="submit" value="Login" onclick="fu(this.form)" >
+	<tr><td><input type="Password" value="" name="Pass" >
+	<tr><td><input type="Submit" value="Login" onclick="fu(this.form)" >
 	</td></tr>	
 </table>
 <%
 
-String pass1=request.getParameter("pass");
+String pass1=request.getParameter("Pass");
 try{
 	Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
 	Connection c= DriverManager.getConnection("jdbc:odbc:akb", "root", "root");
@@ -146,8 +146,8 @@ try{
 
 <%
 
-String str1=request.getParameter("login");
-String str2=request.getParameter("password1");
+String str1=request.getParameter("Login");
+String str2=request.getParameter("Password1");
 if(str1!=null && str2!= null)
 {
 	int flag=0;
@@ -508,11 +508,11 @@ try{
 <center><table cellpadding=2 cellspacing=0 border=0>
 
 
-<tr>  <td bgcolor="red"><table cellpadding=0 cellspacing=0 border=1 width=100%>   <tr>   <td bgcolor="green" align=center style="padding:2;padding-bottom:4">   <b><font size=-1 color="white" face="verdana,arial"> Edit Profile</font></b></tr>
+<tr>  <td bgcolor="green"><table cellpadding=0 cellspacing=0 border=1 width=100%>   <tr>   <td bgcolor="red" align=center style="padding:2;padding-bottom:4">   <b><font size=-1 color="white" face="verdana,arial"> Edit Profile</font></b></tr>
 <tr><td bgcolor="white" style="padding:5"><br>
 <TABLE border=0 cellspacing=2 cellpadding=2 width="100%"> 
 
-<tr>  <td bgcolor="red"><table cellpadding=0 cellspacing=0 border=1 width=100%>   <tr>   <td bgcolor="green" align=center style="padding:2;padding-bottom:4">   <b><font size=-1 color="white" face="verdana,arial"> Profile picture</font></b><td bgcolor="green" align=center style="padding:2;padding-bottom:4"> <b><font size=-1 color="white" face="verdana,arial">Personal info</font></b>
+<tr>  <td bgcolor="green"><table cellpadding=0 cellspacing=0 border=1 width=100%>   <tr>   <td bgcolor="red" align=center style="padding:2;padding-bottom:4">   <b><font size=-1 color="white" face="verdana,arial"> Profile picture</font></b><td bgcolor="green" align=center style="padding:2;padding-bottom:4"> <b><font size=-1 color="white" face="verdana,arial">Personal info</font></b>
 
 <TR> 
    <TD width="50%"> 
